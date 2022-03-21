@@ -45,5 +45,5 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ghcr.io/sfuhnuh124/simplewhale:latest
-          cache-from: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache
-          cache-to: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache,mode=max
+          # cache-from: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache
+          # cache-to: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache,mode=max
