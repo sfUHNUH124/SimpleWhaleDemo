@@ -44,6 +44,6 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ghcr.io/sfuhnuh124/simplewhale:latest
-          # cache-from: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache
-          # cache-to: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache,mode=max
+          tags: ghcr.io/sfuhnuh124/simplewhale:v1
+          cache-from: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache
+          cache-to: type=registry,ref=ghcr.io/sfuhnuh124/simplewhale:buildcache,mode=max
